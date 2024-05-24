@@ -35,13 +35,6 @@ allprojects {
             cacheChangingModulesFor 0, 'seconds'
         }
     }
-
-    repositories {
-        mavenLocal()
-        google()
-        jcenter()
-        maven { url "https://jitpack.io" }
-    }
 }
 
 dependencyResolutionManagement {
