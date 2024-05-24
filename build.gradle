@@ -29,7 +29,6 @@ plugins {
 project.extensions.extraProperties.set('SpotBugsTask', com.github.spotbugs.SpotBugsTask)
 
 allprojects {
-	group = 'com.custom.folioreader'
 
     configurations.all {
         resolutionStrategy {
@@ -37,19 +36,12 @@ allprojects {
         }
     }
 
-	repositories {
-               google()
-            }
-}
-
-dependencyResolutionManagement {
-	repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-	repositories {
-		google()
-		mavenCentral()
-		maven { url 'https://jitpack.io' }
-		jcenter() 
-	}
+    repositories {
+        mavenLocal()
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
 }
 
 task clean(type: Delete) {
