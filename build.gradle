@@ -29,6 +29,7 @@ plugins {
 project.extensions.extraProperties.set('SpotBugsTask', com.github.spotbugs.SpotBugsTask)
 
 allprojects {
+	group = 'com.custom.folioreader'
 
     configurations.all {
         resolutionStrategy {
