@@ -35,6 +35,10 @@ allprojects {
             cacheChangingModulesFor 0, 'seconds'
         }
     }
+
+	repositories {
+               google()
+            }
 }
 
 dependencyResolutionManagement {
